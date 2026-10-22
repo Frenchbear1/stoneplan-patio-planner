@@ -1,0 +1,63 @@
+Stoneplan — custom canvas and saved patio layouts (3.4)
+
+Open patio_planner.html in a browser. Both HTML files are identical and self-contained.
+No installation or internet connection is needed.
+
+BUILD FROM A BLANK CANVAS
+1. Click Start blank canvas on the left. The shed stays at the top.
+2. The brick bank shows one card each for square, long, short, and edge blocks,
+   with the exact quantity still available. Drag a card onto the canvas to place
+   one block, or click the card to add one in available space.
+3. Drag any placed block to move it. Select it and click Rotate, or press R,
+   to turn that individual block 90 degrees.
+4. Magnet aligns nearby corners first, including different-size edges. When no
+   corner is close enough, it aligns neighboring edges while allowing partial contact.
+   A small green marker identifies the snap point.
+5. Turn Magnet off on the left for unsnapped placement. Arrow keys nudge a selected
+   block 0.25 inch; Shift + arrow nudges 1 inch.
+6. Drag a placed block outside the drawing or click Return selected block to put it
+   back in the bank. Delete/Backspace also returns the selected custom block.
+7. Clear custom canvas / Return all blocks clears the custom drawing. Undo restores it.
+
+Custom mode allows gaps and manual overlap. Overlapping pairs are highlighted and
+reported; custom drawings are not labeled as gap-free generated layouts.
+The exact measured block footprints and stock limits remain in force.
+The canvas keeps blocks visible and below the shed.
+
+CUSTOM AND GENERATED MODES
+Generated layouts returns to the existing fitted pattern. Continue custom canvas
+brings back your custom work. Choosing or generating a preset opens generated mode.
+Your separate custom layout is retained while switching with the mode buttons.
+Changing the drawing dimensions in custom mode keeps the placed blocks and adjusts
+any positions needed to stay within the visible drawing.
+Save design / Open saved preserves custom positions, rotations, magnet setting,
+view preference, mode, and the generated layout used for the frame.
+The last layout is also remembered automatically by the browser.
+
+SAVED DESIGNS
+Woven courtyard and Quiet edge (left or right) are fixed reviewed arrangements at:
+- 240.5 x 130 in: 91 squares, 51 long, 35 short; one short remains.
+- 266.5 x 117 in: 90 squares, 51 long, 36 short; one square remains.
+The saved-designs folder includes editable JSON files, numbered SVG maps, and a
+comparison image. Other widths use repeatable adaptations of the same recipes.
+Balanced mosaic and Spatial shuffle check neighboring courses and omit the large
+six-long-block rotation patches. Geometric studies retain explicitly grouped styles.
+
+BRICK BANK
+The bank always uses four counted type cards rather than an individual list.
+In generated mode, main pavers remain in the fitted grid; spare main pavers are listed
+in the bank, and unplaced edge blocks can be dragged or added.
+In custom mode, all four types can be placed and returned freely.
+Front-only puts 18 edge blocks at the front and stores the other seven in the bank.
+Undo/redo and saved files include bank membership. Existing saved files still open.
+
+VIEWS AND PRINTING
+2D solid colors gives a plain top view. In custom mode, Photo textures applies the
+cleaned top-face photos to the same 2D pieces. Existing generated-mode photo behavior
+is retained; the cancelled orbit/3D work was not applied.
+Print 1-page installation map prints the current generated or custom layout and bank
+counts. Use US Letter, landscape, or Save as PDF in the browser's print dialog.
+Custom prints explicitly note any overlapping blocks. Export SVG follows the current view.
+Verify all site dimensions, joints, grade, and construction requirements before laying.
+
+The assets folder contains the cleaned photographs and image-edit prompts.

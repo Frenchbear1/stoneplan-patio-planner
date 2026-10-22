@@ -1,0 +1,40 @@
+{
+  "mode": "built-in image_gen",
+  "prompts": [
+    {
+      "key": "scene",
+      "paths": [
+        "C:\\Users\\labar\\iCloudPhotos\\Photos\\IMG_9363.JPEG"
+      ],
+      "prompt": "Use case: precise-object-edit. Edit target: the attached real shed photograph. Keep the exact real shed, roof, siding, trees, sky, framing, perspective, wall position and natural daylight. Remove ALL clutter in front of and alongside the wall: every stacked paver/block, barrel, trash bin, ladder, trailer and red metal frame, wire mesh, pots, tarps, slabs, timber and debris. Reconstruct the hidden lower wall realistically. Replace ALL foreground ground with a continuous flat, level, neatly mown green grass lawn extending right up to the shed base. No objects or pavers anywhere on the lawn; this is a clean background for an interactive patio overlay later. Preserve the wide 4:3 photograph composition. Photorealistic object removal, no text."
+    },
+    {
+      "key": "Q",
+      "paths": [
+        "C:\\Users\\labar\\iCloudPhotos\\Photos\\IMG_9360.JPEG"
+      ],
+      "prompt": "Use case: background-extraction and precise-object-edit. Edit target: attached paver photograph. Deliver ONLY a clean orthographic top-face texture of the large square paver in the lower center. Rectify its perspective into a perfect square, tightly crop so its gray-brown concrete top surface fills the entire image from edge to edge. Preserve real granular mottled concrete texture and natural gray-brown color. Retouch away ALL white chalk/scuff/scratch patches to match adjacent concrete. No other pavers, black gaps, shadows, side faces, shoes, ground, border, frame, margins, writing or backdrop. The entire output is concrete top surface, flat evenly lit with subtle realistic texture. Square image."
+    },
+    {
+      "key": "L",
+      "paths": [
+        "C:\\Users\\labar\\iCloudPhotos\\Photos\\IMG_9361.JPEG"
+      ],
+      "prompt": "Use case: background-extraction and precise-object-edit. Edit target: attached rectangular paver photograph. Deliver ONLY the top-face texture of the large central wide rectangular paver. Rectify perspective to a horizontal 3:2 rectangle and crop tightly so gray-brown concrete surface fills the entire image edge to edge. Preserve this real paver's granular mottled gray-brown concrete texture. Remove ALL white scuff/chalk/scratch spots by restoring matching concrete. No surrounding pavers, black gaps, side faces, ground, cast shadows, borders, margins, frame or text. Entire image is evenly lit concrete top surface. Landscape 3:2."
+    },
+    {
+      "key": "S",
+      "paths": [
+        "C:\\Users\\labar\\iCloudPhotos\\Photos\\IMG_9362.JPEG"
+      ],
+      "prompt": "Use case: background-extraction and precise-object-edit. Edit target: attached narrow paver photo. Deliver ONLY the surface of the long narrow central concrete paver's TOP face. Rectify perspective into a vertical rectangle with width:height=1:2; crop inside the top-face edges so concrete texture fills entire image edge to edge, with no neighboring stones or black gaps. Preserve granular light gray concrete with natural subtle mottling. Retouch ALL white scuff marks and conspicuous rust spots with matching concrete texture. No sides, gaps, ground, wood, backdrop, border, margins or text. Top concrete surface only, evenly lit. Portrait 1:2."
+    },
+    {
+      "key": "B",
+      "paths": [
+        "C:\\Users\\labar\\iCloudPhotos\\Photos\\IMG_9357.JPEG"
+      ],
+      "prompt": "Use case: background-extraction and precise-object-edit. Edit target: attached edge block photo. Deliver ONLY the rough TOP face texture of the horizontal foreground edge block. Rectify perspective and tightly crop to a horizontal rectangle width:height=14.5:8, so the rough gray concrete top surface fills the entire image edge to edge. Preserve rough granular aggregate concrete appearance. No side faces, other blocks, grass, weeds, blue litter, black gaps, shadows, borders, margins, frames, text or white scuff marks. Entire image must be uniformly lit gray concrete top face. Landscape image."
+    }
+  ]
+}

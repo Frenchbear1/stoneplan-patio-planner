@@ -1,0 +1,24 @@
+The saved designs are fixed arrangements with separate versions for both footprints.
+
+Woven courtyard uses planned per-course size budgets before optimizing each piece.
+At 240.5 in, long/square bookend rows frame the mixed middle courses.
+At 266.5 in, rows with extra short accents recur every third course.
+
+Quiet edge places the surplus visual weight of the squares into one continuous column.
+The neighboring mixed-field piece is always another type, keeping that column distinct.
+Left and right are intentional mirrored alternatives of the same arrangement.
+
+Review criteria:
+- No rotation patches in these designs.
+- No side-by-side repeated types within a mixed-field row.
+- No cuts, gaps, overlaps, or inventory excess.
+- Small vertical touching groups, rather than large blocks of one type.
+- Fixed layout data that does not change with a different seed.
+
+240.5 x 130: 91 Q, 51 L, 35 S. Largest mixed-field touching group: 3 pieces.
+266.5 x 117: 90 Q, 51 L, 36 S. Largest mixed-field touching group: 4 pieces.
+The deliberate square column is excluded from those mixed-field figures.
+
+JSON files can be opened with the planner's Open saved button.
+SVG files show the numbered top-view layouts and standard edge positions.
+reviewed-presets.png is the visual comparison sheet.

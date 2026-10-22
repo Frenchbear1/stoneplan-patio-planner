@@ -1,0 +1,628 @@
+{
+  "version": 3,
+  "title": "Quiet edge · left",
+  "settings": {
+    "shedWidth": 290,
+    "cols": 37,
+    "preset": "curated-edge-left",
+    "seed": "STUDIO-LEFT-37",
+    "joint": 0,
+    "border": "wrap",
+    "showNums": true,
+    "showGrid": false,
+    "viewMode": "flat"
+  },
+  "layout": {
+    "cols": 37,
+    "rows": 10,
+    "patches": [],
+    "rowsData": [
+      {
+        "start": 0,
+        "width": 37,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 37,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 37,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 37,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 37,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 37,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 37,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 37,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 37,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 37,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          }
+        ]
+      }
+    ],
+    "seed": "STUDIO-LEFT-37",
+    "preset": "curated-edge-left",
+    "designStyle": "edge-left",
+    "quality": {
+      "score": 13198,
+      "horizontalPairs": 0,
+      "sharedVerticalUnits": 95,
+      "threeRowStacks": 18,
+      "solidPatches": 33,
+      "largestTouchingGroup": 3,
+      "largeGroups": 16,
+      "maxRun": 1,
+      "intentionalSquareColumn": true,
+      "intentionalColumnSide": "left"
+    }
+  }
+}

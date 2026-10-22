@@ -1,0 +1,621 @@
+{
+  "version": 3,
+  "title": "Woven courtyard",
+  "settings": {
+    "shedWidth": 290,
+    "cols": 41,
+    "preset": "curated-weave",
+    "seed": "REVIEWED-41-weave",
+    "joint": 0,
+    "border": "wrap",
+    "showNums": true,
+    "showGrid": false,
+    "viewMode": "flat"
+  },
+  "layout": {
+    "cols": 41,
+    "rows": 9,
+    "patches": [],
+    "rowsData": [
+      {
+        "start": 0,
+        "width": 41,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 41,
+        "groups": [
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 41,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 41,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 41,
+        "groups": [
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 41,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 41,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 41,
+        "groups": [
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          }
+        ]
+      },
+      {
+        "start": 0,
+        "width": 41,
+        "groups": [
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "S"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          },
+          {
+            "kind": "L"
+          },
+          {
+            "kind": "Q"
+          }
+        ]
+      }
+    ],
+    "seed": "REVIEWED-41-weave",
+    "preset": "curated-weave",
+    "designStyle": "weave",
+    "quality": {
+      "score": 81124,
+      "horizontalPairs": 0,
+      "sharedVerticalUnits": 98,
+      "threeRowStacks": 20,
+      "solidPatches": 28,
+      "largestTouchingGroup": 4,
+      "largeGroups": 17,
+      "maxRun": 1,
+      "intentionalSquareColumn": false
+    }
+  }
+}
