@@ -6,6 +6,7 @@ Plan the patio behind the shed using the measured inventory and actual stone tex
 
 - Start with a blank canvas or choose a saved patio design.
 - Drag square, long, short, and edge blocks from the counted brick bank.
+- Add or remove extra blocks for any type; the bank tracks extras placed and extras still available.
 - Drag a box from empty canvas to select every block it touches. Hold Ctrl while clicking or drawing another box to add to the selection, then move or rotate the group together.
 - Rotate individual blocks and snap nearby corners and edges together.
 - Switch the magnet off for free placement.

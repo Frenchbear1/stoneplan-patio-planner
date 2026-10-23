@@ -56,6 +56,9 @@ The bank always uses four counted type cards rather than an individual list.
 In generated mode, main pavers remain in the fitted grid; spare main pavers are listed
 in the bank, and unplaced edge blocks can be dragged or added.
 In custom mode, all four types can be placed and returned freely.
+Use + and - below a type to add or remove extra purchased blocks. Each type shows
+how many extras are placed and how many remain in the bank. Return a placed extra
+to the bank before removing it from the tracked inventory.
 Front-only puts 18 edge blocks at the front and stores the other seven in the bank.
 Undo/redo and saved files include bank membership. Existing saved files still open.
 
