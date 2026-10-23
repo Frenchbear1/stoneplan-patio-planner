@@ -64,7 +64,8 @@ VIEWS AND PRINTING
 cleaned top-face photos to the same 2D pieces. Existing generated-mode photo behavior
 is retained; the cancelled orbit/3D work was not applied.
 Print 1-page installation map prints the current generated or custom layout and bank
-counts. Use US Letter, landscape, or Save as PDF in the browser's print dialog.
+counts. It uses only the tile colors, hides tile IDs, and crops the drawing so the shed
+and patio fill the page. Use US Letter, landscape, or Save as PDF in the browser's print dialog.
 Custom prints explicitly note any overlapping blocks. Export SVG follows the current view.
 Verify all site dimensions, joints, grade, and construction requirements before laying.
 

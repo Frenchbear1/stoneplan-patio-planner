@@ -11,7 +11,7 @@ Plan the patio behind the shed using the measured inventory and actual stone tex
 - Switch the magnet off for free placement.
 - While dragging a group, the magnet compares nearby positions and snaps where the most selected blocks can connect without overlaps.
 - Choose photo textures or flat 2D colors.
-- Save and reopen designs, undo changes, and print an installation map.
+- Save and reopen designs, undo changes, and print a label-free, tightly cropped color map.
 
 ## Open locally
 
