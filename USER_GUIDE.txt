@@ -18,6 +18,9 @@ BUILD FROM A BLANK CANVAS
 4. Magnet aligns nearby corners first, including different-size edges. When no
    corner is close enough, it aligns neighboring edges while allowing partial contact.
    A small green marker identifies the snap point.
+   When several blocks are selected, the group stays rigid while the magnet compares
+   nearby positions and chooses the one that connects the most selected blocks without
+   overlapping unselected blocks.
 5. Turn Magnet off on the left for unsnapped placement. Arrow keys nudge a selected
    block 0.25 inch; Shift + arrow nudges 1 inch.
 6. Drag a placed block outside the drawing or click Return selected block to put it

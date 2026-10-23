@@ -9,6 +9,7 @@ Plan the patio behind the shed using the measured inventory and actual stone tex
 - Drag a box from empty canvas to select every block it touches. Hold Ctrl while clicking or drawing another box to add to the selection, then move or rotate the group together.
 - Rotate individual blocks and snap nearby corners and edges together.
 - Switch the magnet off for free placement.
+- While dragging a group, the magnet compares nearby positions and snaps where the most selected blocks can connect without overlaps.
 - Choose photo textures or flat 2D colors.
 - Save and reopen designs, undo changes, and print an installation map.
 
