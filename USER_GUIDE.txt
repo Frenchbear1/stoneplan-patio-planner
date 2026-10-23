@@ -10,6 +10,9 @@ BUILD FROM A BLANK CANVAS
    one block, or click the card to add one in available space.
 3. Drag any placed block to move it. Select it and click Rotate, or press R,
    to turn that individual block 90 degrees.
+   Hold Ctrl and click blocks to select several. Drag any selected block to move
+   the group, or use Rotate / R to turn the whole selection 90 degrees together.
+   Ctrl-click a selected block again to remove it from the group.
 4. Magnet aligns nearby corners first, including different-size edges. When no
    corner is close enough, it aligns neighboring edges while allowing partial contact.
    A small green marker identifies the snap point.
