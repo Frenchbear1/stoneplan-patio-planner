@@ -630,7 +630,7 @@ function openManual(){if(isManual())return;snapshot();app.editorMode='free';app.
 function clearManual(){if(!app.freePieces.length)return;snapshot();app.freePieces=[];setManualSelection([]);manualGuide=null;render();persist()}
 function manualFrameChanged(){app.layout=createLayout(app.cols,app.preset,'CUSTOM-FRAME');app.freePieces=app.freePieces.map(p=>clampManual(p));setManualSelection([]);app.undo=[];app.redo=[];render();persist()}
 function validateManualImport(pieces){if(!Array.isArray(pieces))throw Error('Invalid custom layout');const ids=new Set(),counts={Q:0,L:0,S:0,B:0};return pieces.map(p=>{if(!p||!Object.hasOwn(counts,p.kind)||typeof p.id!=='string'||ids.has(p.id)||!Number.isFinite(p.x)||!Number.isFinite(p.y)||![0,90].includes(p.rot)||++counts[p.kind]>STOCK[p.kind]+app.extras[p.kind])throw Error('Invalid custom block or inventory');ids.add(p.id);return clampManual({id:p.id,kind:p.kind,x:p.x,y:p.y,rot:p.rot})})}
-let manualGuide=null,manualDrag=null,manualMarquee=null,skipManualClick=false,manualSelected=new Set();
+let manualGuide=null,manualDrag=null,manualMarquee=null,skipManualClick=false,manualSelected=new Set(),bankDragKind=null;
 function drawManualSvg(selected,opts={}){const el=$('planSvg'),m=stageMetrics(app.layout),v=manualReport(),photo=app.viewMode==='photo',p=m.pp;el.setAttribute('class','plan-svg'+(photo?'':' flat-view'));el.setAttribute('viewBox','0 0 '+m.stageW+' '+m.stageH);
  let out='<title>Custom patio layout with '+app.freePieces.length+' manually placed blocks</title><rect width="'+m.stageW+'" height="'+m.stageH+'" fill="#f5f8f5"/>';
  if(photo){out+='<defs>';for(const k of ['Q','L','S','B'])for(const r of [0,90])out+='<pattern id="manual'+k+r+'" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="'+PHOTO_TEXTURES[k]+'" width="1" height="1" preserveAspectRatio="none"'+(r?' transform="rotate(90 .5 .5)"':'')+'/></pattern>';out+='</defs>'}
@@ -669,12 +669,14 @@ function renderBank(){if(!app.layout)return;const inv=bankInventory(),free=isMan
 }
 function initBank(){const svg=$('planSvg');
  $('bankMain').addEventListener('click',e=>{const extra=e.target.closest('[data-extra-action]');if(extra){adjustExtra(extra.getAttribute('data-extra-kind'),extra.getAttribute('data-extra-action')==='add'?1:-1);return}const node=e.target.closest('[data-bank-kind]');if(!node)return;const kind=node.getAttribute('data-bank-kind');if(isManual())manualPlace(kind);else if(kind==='B'){const b=app.borderBlocks.find(p=>p.placed===false);if(b)placeBorder(b.id)}else msg('Choose Start blank canvas on the left to place main pavers freely.')});
- $('bankMain').addEventListener('dragstart',e=>{const node=e.target.closest('[data-bank-kind]');if(!node)return;const kind=node.getAttribute('data-bank-kind');if(bankInventory()[kind]<=0||!isManual()&&kind!=='B'){e.preventDefault();return}e.dataTransfer.setData('text/stoneplan-kind',kind);e.dataTransfer.effectAllowed='move'});
+ $('bankMain').addEventListener('dragstart',e=>{const node=e.target.closest('[data-bank-kind]');if(!node)return;const kind=node.getAttribute('data-bank-kind');if(bankInventory()[kind]<=0||!isManual()&&kind!=='B'){bankDragKind=null;e.preventDefault();return}bankDragKind=kind;e.dataTransfer.setData('text/stoneplan-kind',kind);e.dataTransfer.setData('text/plain','stoneplan:'+kind);e.dataTransfer.effectAllowed='move'});
+ $('bankMain').addEventListener('dragend',()=>{bankDragKind=null});
  $('storeSelected').addEventListener('click',()=>{if(isManual()){const p=selectedManualPieces()[0];if(p)removeManual(p.id)}else if(String(app.selected||'').startsWith('b:'))storeBorder(app.selected.slice(2))});
  $('storeAllEdges').addEventListener('click',()=>{if(isManual())return clearManual();snapshot();for(const b of app.borderBlocks)b.placed=false;app.border='none';$('borderMode').value='none';app.selected=null;render();persist()});
  for(const host of [$('photoCanvas'),svg]){
-  host.addEventListener('dragover',e=>{if(Array.from(e.dataTransfer.types).some(t=>['text/stoneplan-kind','text/stoneplan-border'].includes(t)))e.preventDefault()});
-  host.addEventListener('drop',e=>{const kind=e.dataTransfer.getData('text/stoneplan-kind'),oldId=e.dataTransfer.getData('text/stoneplan-border');if(!kind&&!oldId)return;e.preventDefault();const m=stageMetrics(app.layout);let p;
+  host.addEventListener('dragover',e=>{const types=Array.from(e.dataTransfer?.types||[]);if(bankDragKind||types.some(t=>['text/stoneplan-kind','text/stoneplan-border','text/plain'].includes(t))){e.preventDefault();if(e.dataTransfer)e.dataTransfer.dropEffect='move'}});
+  host.addEventListener('dragenter',e=>{if(bankDragKind)e.preventDefault()});
+  host.addEventListener('drop',e=>{const plain=e.dataTransfer?.getData('text/plain')||'',kind=(e.dataTransfer?.getData('text/stoneplan-kind')||bankDragKind||(plain.startsWith('stoneplan:')?plain.slice(10):'')),oldId=e.dataTransfer?.getData('text/stoneplan-border')||'';bankDragKind=null;if(!kind&&!oldId)return;e.preventDefault();const m=stageMetrics(app.layout);let p;
    if(host===svg){const v=new DOMPoint(e.clientX,e.clientY).matrixTransform(host.getScreenCTM().inverse());p={x:v.x/m.pp,y:v.y/m.pp}}
    else{const r=host.getBoundingClientRect(),v=photoUnproject((e.clientX-r.left)*1448/r.width,(e.clientY-r.top)*1086/r.height);p={x:v.x+m.patioXIn+m.patio/2,y:v.z+m.patioYIn}}
    if(isManual()){if(!['Q','L','S','B'].includes(kind))return;const s=manualSize({kind,rot:0});manualPlace(kind,p.x-s.w/2,p.y-s.h/2)}else if(kind==='B'||oldId){const b=oldId?getBorderById(oldId):app.borderBlocks.find(b=>b.placed===false);if(b){const s=borderSize(b);placeBorder(b.id,p.x-s.w/2,p.y-s.h/2)}}else msg('Use Start blank canvas to place main pavers.');
@@ -694,7 +696,7 @@ function initManual(){const svg=$('planSvg');svg.setAttribute('tabindex','0');$(
  svg.addEventListener('keydown',e=>{if(!isManual())return;e.stopImmediatePropagation();if(e.key.toLowerCase()==='r'){rotateManual();e.preventDefault()}else if(['Delete','Backspace'].includes(e.key)){const p=selectedManualPieces()[0];if(p)removeManual(p.id);e.preventDefault()}else if(e.key.startsWith('Arrow')){const step=e.shiftKey?1:.25;moveManual(e.key==='ArrowLeft'?-step:e.key==='ArrowRight'?step:0,e.key==='ArrowUp'?-step:e.key==='ArrowDown'?step:0);e.preventDefault()}},true);
 }
 
- window.StoneplanTest={createLayout,expand,validate,stock:STOCK,version:'3.9-extra-inventory',photoProject,photoUnproject};
+ window.StoneplanTest={createLayout,expand,validate,stock:STOCK,version:'3.10-reliable-bank-drag',photoProject,photoUnproject};
  init();
 })();
 </script>
